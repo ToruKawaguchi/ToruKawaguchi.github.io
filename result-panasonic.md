@@ -1,4 +1,4 @@
-# PlugFest Preparation <span style="color:red;">and Result</span> for Bundang 2018
+# PlugFest Preparation <font color="red">and Result</font> for Bundang 2018
 
 This document describes the Bundang PlugFest held on June 30 and July 1.
 
@@ -6,7 +6,7 @@ A summary of the previous Prague PlugFest can be found [here](https://github.com
 
 Features marked with <i>italics</i> are work-in-progress.
 
-The result of individual item is written in <span style="color:red;">RED</span>.
+The result of individual item is written in <font color="red">RED</font>.
 
 ## 1 PlugFest Infrastructure
 This section lists the infrastructure available for the PlugFest, which can be used for individual testing (see [Section 3.1](#31-testing-individually))
@@ -71,34 +71,34 @@ The following checking points can be completed by the participant alone by using
 
 * Panasonic will validate their updated TDs
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 - All TDs in [repository](https://github.com/w3c/wot/tree/master/plugfest/2018-bundang/TDs/Panasonic) have been validated by [Thing Description Playground](http://plugfest.thingweb.io/playground/).
-</span>
+</font>
 
 #### 3.1.2 Register with Thing Directory -- was (5)
 
 * Panasonic will register all Things with the Directory
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Local Thing
     * Some TDs in [repository](https://github.com/w3c/wot/tree/master/plugfest/2018-bundang/TDs/Panasonic) such as [Simulator Air Conditioner](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Panasonic/simulator/PanasonicSimulatedAirConditioner1.jsonld) have been registered to Fujitsu Local Proxy/Directory manually by using YARC on Raspberry Pi, and have been discovered through its Remote Proxy/Directory by using ARC on PC.
     * <b>Interaction with things on Remote Proxy was NOT successful due to some internal issue of the proxy</b>.
-</span>
+</font>
 
 #### 3.1.3 Connect with Remote/Local Proxy -- was (1)
 
 * Panasonic will register local Things with the Fujitsu local proxy.
 * Registeration to other proxies TBD
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Included in [Result] of 3.1.2.
-</span>
+</font>
 
 #### 3.1.4 Connect with node-wot -- was (3)
 
@@ -107,12 +107,12 @@ The following checking points can be completed by the participant alone by using
 #### 3.1.5 Scripting API -- was (4)
 * Panasonic wrote Generic HTML Client script against the Wot Scripting API implemented as JavaScript library.
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * The client worked successfully.  
 ![Panasonic_wot_client](./images/Panasonic_wot_client.png)
-</span>
+</font>
 
 
 ### 3.2 Testing in Client Role
@@ -123,7 +123,7 @@ The following checking points must be completed together with a partner in serve
 * Panasonic will use WoT Scripting API implemented as JavaScirpt library, which can consume any Thing metadata with HTTP bindings.
 * Panasonic will use NodeRED with the node which can consume any Thing metadata with HTTP bindings.
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic Generic WoT client with WoT Scripting API loaded following TDs and accessed things successfully:
@@ -134,7 +134,7 @@ The following checking points must be completed together with a partner in serve
       * <b>Issue:  Only first binding could be chosen from Multiple HTTP bindings written in Intel's TD, since there seems to be no way to distinguish and specify particular binding through Scripting API (?) </b>
     * Siemens's [EventSource](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Siemens/EventSource.jsonld) and [EventSource-WS](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Siemens/EventSource-WS.jsonld)
 
-</span>
+</font>
 
 
 
@@ -149,7 +149,7 @@ The following checking points must be completed together with a partner in serve
    * WebSocket
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic Generic WoT client could GET properties from following things through HTTP successfully:
@@ -159,7 +159,7 @@ The following checking points must be completed together with a partner in serve
     * Intel's [Button](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Intel/intel-button.jsonld), [Light](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Intel/intel-light.jsonld), [Motion](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Intel/intel-motion.jsonld) and [RGB- Light](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Intel/intel-rgb-light.jsonld).
 
 
-</span>
+</font>
 
 
 
@@ -168,12 +168,12 @@ The following checking points must be completed together with a partner in serve
 * Panasonic implements the following invoke bindings
    * HTTP(S)
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * *Panasonic Generic WoT client DID NOT try any Action in other company's things this time.*
 
-</span>
+</font>
 
 
 #### 3.2.4 Event Handling -- was part of (11)
@@ -182,7 +182,7 @@ The following checking points must be completed together with a partner in serve
    * HTTP(S)+Longpoll
    * WebSocket
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic Generic WoT client could subscribe and receive events from following thing through HTTP+Longpoll successfully:
@@ -193,7 +193,7 @@ The following checking points must be completed together with a partner in serve
 * Panasonic Generic WoT client could subscribe and receive events from following thing through WebSocket successfully:
   * Siemens's [EventSource-WS](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Siemens/EventSource-WS.jsonld)
 
-</span>
+</font>
 
 #### 3.2.5 Security -- was part of (9)
 
@@ -203,13 +203,13 @@ The following checking points must be completed together with a partner in serve
    * bearer
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic Generic WoT client could access following thing using BASIC authentication through Authorization header successfully:
   * Oracle's [Fest Simulator](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Oracle/Festo-Simulator5.jsonld).
 
-</span>
+</font>
 
 
 
@@ -218,12 +218,12 @@ The following checking points must be completed together with a partner in serve
 * Panasonic will use manual queries for the Thing Directory to find specific Things of the test partner (no integration to client this time).
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 TBD
 
-</span>
+</font>
 
 
 
@@ -239,14 +239,14 @@ The following checking points must be completed together with a partner in clien
 * Panasonic will expose Things as listed in the table
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic exposed thing descriptions with DUMMY URI in [repository](https://github.com/w3c/wot/tree/master/plugfest/2018-bundang/TDs/Panasonic).
 * Panasnoic exposed thing descriptions of online real things with real URI in [zip file](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Panasonic/panasonic_lab_online_TDs.zip) with password protected (same as WiFi password of W3CWOT).
 * Panasonic exposed thing descriptions online simulated things with real URI at simulator portal (available to only WoT members who requests access information).
 
-</span>
+</font>
 
 
 #### 3.3.2 Properties -- was part of (6) and (7)
@@ -260,14 +260,14 @@ The following checking points must be completed together with a partner in clien
   * WebSocket
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic's [Simulator Air Conditioner](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Panasonic/simulator/PanasonicSimulatedAirConditioner1.jsonld) was accessed from Oracle's Node-WoT based client. Its "desiredTemp" property was read using HTTPS GET periodically, and Oracle's client copied the value into Oracle IoT simulator's Air Conditioner instance, making it possible to monitor the change of the property value.
 
 ![Panasonic_wot_sim_airconditioner](./images/Panasonic_wot_sim_airconditioner.png)
 ![Panasonic_wot_sim_synchronizing_with_Oracle_sim](./images/Panasonic_wot_sim_synchronizing_with_Oracle_sim.png)
-</span>
+</font>
 
 
 
@@ -277,12 +277,12 @@ The following checking points must be completed together with a partner in clien
    * HTTP(S)
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 TBD
 
-</span>
+</font>
 
 
 #### 3.3.4 Events -- was part of (11)
@@ -291,12 +291,12 @@ TBD
    * HTTP(S)+Longpoll
    * WebSocket
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 TBD
 
-</span>
+</font>
 
 
 #### 3.3.5 Security -- was part of (9)
@@ -304,7 +304,7 @@ TBD
 * Panasonic will offer the following Security Schemes:
    * bearer
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * Panasonic's [Simulator Air Conditioner](https://github.com/w3c/wot/blob/master/plugfest/2018-bundang/TDs/Panasonic/simulator/PanasonicSimulatedAirConditioner1.jsonld) was accessed from Oracle's Node-WoT based client, by using bearer token embedded in custom header (X-PWOT-TOKEN). To achieve this, following modification was necessary:
@@ -314,7 +314,7 @@ TBD
   (see [Github issue](https://github.com/eclipse/thingweb.node-wot/issues/7))
 
 
-</span>
+</font>
 
 
 
@@ -323,12 +323,12 @@ TBD
 * Panasonic will annotate their Things with iot.schema.org vocabulary
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 TBD
 
-</span>
+</font>
 
 ### 3.4 Other issues
 
@@ -356,14 +356,14 @@ TBD
   - Smart home and other area orchestration, such as automotive, building, industry or smart city infrastructure.
 
 
-<span style="color:red;">
+<font color="red">
 [Result]
 
 * TBD. *I'm Home/Byeを活用したケースがあったなら、說明を書く。*
 * TBD. *IntelのOCFデバイスとの連携について、說明を書く。*
 * The scenario explained in 3.3.2 implemented by Oracle was a new use case which synchronizes physical and virtual things to enable monitoring and analysis of the physical thing's behavior easily.
 
-</span>
+</font>
 
 
 
